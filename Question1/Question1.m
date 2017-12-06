@@ -3,4 +3,30 @@ A=[-4,1,0,0,0,1,0,0,0,0,0;1,-4,1,0,0,0,1,0,0,0,0;0,1,-4,1,0,0,0,1,0,0,0;0,0,1,-4
 b=[-90;-90;-90;-135;-180;0;0;-45;-30;-30;-90];
 u=A\b;
 
+matrix=zeros(5,7);
+%transposes the matrix
+matrix(1,1:7)=90;
+matrix(5,1:5)=30;
+matrix(1:3,7)=60;
+matrix(3:5,5)=60;
+matrix(3,5:7)=30;
+matrix(4:5,6:7)=NaN;
+matrix(3,5)=45;
 
+%hardcode u into points
+
+matrix(7)=44.7789;
+matrix(12)=61.2376;
+matrix(17)=66.685;
+matrix(22)=65.7827;
+matrix(27)=61.4457;
+matrix(8)=27.8781;
+matrix(13)=46.4864;
+matrix(18)=49.71972;
+matrix(9)=23.2471;
+matrix(14)=35.1102;
+matrix(19)=43.7075;
+
+
+surf(matrix);
+colormap(cool);
