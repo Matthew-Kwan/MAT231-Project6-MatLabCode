@@ -1,7 +1,7 @@
 close all
 clear variables
 clc
-N= 40 %This is the variable we want to change
+N= 40 %This is the variable we want to change, you can change this value to anything and receive the corresponding A and B matrix and vector
 M=(N-1)^2
 L= N-1
  
