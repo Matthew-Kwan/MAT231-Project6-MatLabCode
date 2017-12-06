@@ -8,6 +8,8 @@ matrix(2:4,2:4)=ans'; %transposes the matrix
 matrix(1,1:5)=90;
 matrix(1:5,5)=60;
 matrix(5,1:5)=30;
+
+%averaging corners
 matrix(1,1)=45;
 matrix(1,5)= 75;
 matrix(5,1) = 15;
